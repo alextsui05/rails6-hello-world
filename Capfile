@@ -27,11 +27,19 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/passenger
 #
 require "capistrano/rvm"
+
+require "capistrano/nvm"
+
+set :nvm_type, :user
+set :nvm_node, 'v12.0.0'
+set :nvm_map_bins, %w{node npm yarn}
+
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
-# require "capistrano/bundler"
-require "capistrano/rails/assets"
-require "capistrano/rails/migrations"
+require "capistrano/bundler"
+# require "capistrano/rails/assets"
+# require "capistrano/rails/migrations"
+require 'capistrano/rails'
 # require "capistrano/passenger"
 require "capistrano/puma"
 

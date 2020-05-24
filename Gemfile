@@ -43,6 +43,7 @@ group :development do
   gem 'foreman'
   gem 'capistrano'
   gem 'capistrano-rvm'
+  gem 'capistrano-nvm'
   gem 'capistrano-rails'
   gem 'capistrano3-puma'
 end
