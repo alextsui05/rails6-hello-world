@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'devise'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -46,6 +48,7 @@ group :development do
   gem 'capistrano-nvm'
   gem 'capistrano-rails'
   gem 'capistrano3-puma'
+  gem 'letter_opener_web', '~> 1.0'
 end
 
 group :test do
