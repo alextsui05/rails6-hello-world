@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:alextsui05/rails6-hello-world.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/:application
-# set :deploy_to, "/var/www/:application"
+set :deploy_to, "/var/www/x.atsui.dev"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -23,7 +23,7 @@ set :repo_url, 'git@github.com:alextsui05/rails6-hello-world.git'
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml"
+append :linked_files, "config/database.yml", "config/master.key"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
