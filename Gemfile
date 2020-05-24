@@ -48,6 +48,7 @@ group :development do
   gem 'capistrano-nvm'
   gem 'capistrano-rails'
   gem 'capistrano3-puma'
+  gem 'letter_opener_web', '~> 1.0'
 end
 
 group :test do
